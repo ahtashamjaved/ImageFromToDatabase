@@ -74,3 +74,12 @@ E:\Google Drive3\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase\obj
 E:\Google Drive3\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.csproj.GenerateResource.Cache
 E:\Google Drive3\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.exe.manifest
 E:\Google Drive3\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.application
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.csproj.AssemblyReference.cache
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.FormMain.resources
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.FormThankYou.resources
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.FormProcessImage.resources
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.Properties.Resources.resources
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.csproj.GenerateResource.cache
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.exe
+C:\Users\Ahtasham\Source\Repos\ahtashamjaved\ImageFromToDatabase\ImageFromToDatabase\obj\Debug\ImageFromToDatabase.pdb

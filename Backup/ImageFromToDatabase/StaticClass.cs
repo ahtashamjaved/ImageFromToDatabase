@@ -114,7 +114,7 @@ namespace ImageFromToDatabase
         public static string connectionStr = "Data Source=AHTASHAMJAVED;Initial Catalog=ReportSupply2012;Integrated Security=True";
         public static string dataSourceSource = "";
         public static string dataSourceDestination = "";
-        public static string databasePassword = "password here";
+        public static string databasePassword = "sk21213631";
 
 
 
