@@ -1,0 +1,1863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase\bin\Release\ImageFromToDatabase.exe">
+   <Modules>
+    <Module Name="imagefromtodatabase.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'ImageFromToDatabase.exe' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'ImageFromToDatabase.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'ImageFromToDatabase.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="ImageFromToDatabase">
+       <Types>
+        <Type Name="FormMain" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#buttonSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="277">Modify 'FormMain.buttonSave_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="334">Modify 'FormMain.buttonSave_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="318">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="318">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="326">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="326">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="256">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="311">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonSave_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="211">Change 'FormMain.buttonSave_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="220">Change 'FormMain.buttonSave_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="279">Change 'FormMain.buttonSave_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="336">Change 'FormMain.buttonSave_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#buttonStart_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="153">Modify 'FormMain.buttonStart_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="149">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonStart_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="150">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'FormMain.buttonStart_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="155">Change 'FormMain.buttonStart_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadTables()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="102">Modify 'FormMain.LoadTables()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="104">Change 'FormMain.LoadTables()' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#selectDataBaseToolStripMenuItem_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="67">Modify 'FormMain.selectDataBaseToolStripMenuItem_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="69">Change 'FormMain.selectDataBaseToolStripMenuItem_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#selectDestinationDatabaseToolStripMenuItem_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="389">Modify 'FormMain.selectDestinationDatabaseToolStripMenuItem_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="Form1.cs" Line="391">Change 'FormMain.selectDestinationDatabaseToolStripMenuItem_Click(object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SanadController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Sanad" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Sanad' in type name 'SanadController'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#GetDataOledb(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="59">Modify 'SanadController.GetDataOledb(string)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="68">Modify 'SanadController.GetDataOledb(string)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="75">Modify 'SanadController.GetDataOledb(string)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="24">Change 'List&lt;SanadDataClass&gt;' in 'SanadController.GetDataOledb(string)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="Oledb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="24">Correct the spelling of 'Oledb' in member name 'SanadController.GetDataOledb(string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="24">The 'this' parameter (or 'Me' in Visual Basic) of 'SanadController.GetDataOledb(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="SanadController.cs" Line="44">Because the behavior of 'Convert.ToInt32(object)' could vary based on the current user's locale settings, replace this call in 'SanadController.GetDataOledb(string)' with a call to 'Convert.ToInt32(object, IFormatProvider)'. If the result of 'Convert.ToInt32(object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SanadDataClass" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Sanad" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Sanad' in type name 'SanadDataClass'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Allocation_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.Allocation_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Allocation_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#B2B_NOC" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="NOC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NOC' in member name 'SanadDataClass.B2B_NOC' by changing it to 'Noc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.B2B_NOC'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bank_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.Bank_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Bank_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bay_Form_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Bay_Form_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Branch_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Branch_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Candidate_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Candidate_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Certificate_Sr_No" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Sr" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'Sr' in member name 'SanadDataClass.Certificate_Sr_No' by changing it to 'SR'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Certificate_Sr_No'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Challan_No" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Challan" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Challan' in member name 'SanadDataClass.Challan_No' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Challan_No'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Chances_Left" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Chances_Left'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Comp_Subjects_P1" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Comp_Subjects_P1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Comp_Subjects_P2" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Comp_Subjects_P2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Created_By" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Created_By'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Date_Created" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Date_Created'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Date_Of_Birth" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Date_Of_Birth'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Date_Submitted" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Date_Submitted'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Date_Updated" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Date_Updated'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#District_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.District_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#E_Mail" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EMail" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EMail' in member name 'SanadDataClass.E_Mail' exists as a discrete term. If your usage is intended to be single word, case it as 'Email' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.E_Mail'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Elec_Subjects_P1" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Elec" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Elec' in member name 'SanadDataClass.Elec_Subjects_P1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Elec_Subjects_P1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Elec_Subjects_P2" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Elec" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Elec' in member name 'SanadDataClass.Elec_Subjects_P2' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Elec_Subjects_P2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Exam_Data_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.Exam_Data_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Exam_Data_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Exam_Session" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Exam_Session'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Exam_Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Exam_Type'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Father_CNIC" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CNIC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CNIC' in member name 'SanadDataClass.Father_CNIC' by changing it to 'Cnic'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Father_CNIC'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Father_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Father_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FC_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.FC_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#First_Previous_Board_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.First_Previous_Board_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.First_Previous_Board_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#First_Previous_Notification" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.First_Previous_Notification'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#First_Previous_Passing_Year" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.First_Previous_Passing_Year'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#First_Previous_ROll_No" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ROll" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'ROll' in member name 'SanadDataClass.First_Previous_ROll_No' exists as a discrete term. If your usage is intended to be single word, case it as 'Roll' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Oll" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Oll' in member name 'SanadDataClass.First_Previous_ROll_No' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.First_Previous_ROll_No'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#First_Previous_SESSION" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SESSION" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SESSION' in member name 'SanadDataClass.First_Previous_SESSION' by changing it to 'Session'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.First_Previous_SESSION'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Form_No" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Form_No'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenderHeShe" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="He" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'He' in member name 'SanadDataClass.GenderHeShe' by changing it to 'HE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Grade_Obtained" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Grade_Obtained'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Group_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Group_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Identification_Mark" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Identification_Mark'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InstitueteName" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Instituete" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Instituete' in member name 'SanadDataClass.InstitueteName' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Institution_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Institution_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Internal_Grade" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Internal_Grade'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Internal_Grade_String" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Internal_Grade_String'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Is_Hafiz" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Is_Hafiz'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Link_Roll_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Link_Roll_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Marks_Obtained" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Marks_Obtained'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Marks_Total" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Marks_Total'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Next_Board_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.Next_Board_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Next_Board_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Next_Passing_Year" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Next_Passing_Year'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Next_Result_Notification" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Next_Result_Notification'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Next_Roll_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Next_Roll_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Next_Session" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Next_Session'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NOC_Board_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.NOC_Board_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message Id="NOC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NOC' in member name 'SanadDataClass.NOC_Board_ID' by changing it to 'Noc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.NOC_Board_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op11" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op11' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op12" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op12' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op13" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op13' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op14" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op14' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op15" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op15' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op16" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op16' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op17" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op17' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op18" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op18' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op21" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op21' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op22" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op22' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op23" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op23' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op24" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op24' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op25" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op25' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op26" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op26' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op27" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op27' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op28" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="op" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'op' in member name 'SanadDataClass.op28' by changing it to 'OP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Overall_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Overall_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper11_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper11_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper11_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper11_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper11_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper11_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper12_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper12_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper12_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper12_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper12_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper12_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper13_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper13_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper13_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper13_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper13_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper13_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper14_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper14_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper14_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper14_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper14_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper14_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper15_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper15_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper15_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper15_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper15_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper15_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper16_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper16_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper16_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper16_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper16_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper16_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper17_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper17_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper17_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper17_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper17_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper17_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper18_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper18_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper18_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper18_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper18_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper18_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper21_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper21_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper21_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper21_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper21_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper21_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper22_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper22_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper22_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper22_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper22_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper22_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper23_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper23_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper23_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper23_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper23_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper23_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper24_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper24_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper24_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper24_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper24_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper24_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper25_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper25_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper25_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper25_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper25_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper25_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper26_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper26_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper26_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper26_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper26_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper26_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper27_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper27_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper27_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper27_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper27_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper27_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper28_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper28_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper28_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper28_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Paper28_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Paper28_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Passing_Year" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Passing_Year'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Picture_File" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Picture_File'.</Issue>
+            </Message>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'SanadDataClass.Picture_File' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Post_Address" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Post_Address'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical15_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical15_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical16_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical16_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical17_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical17_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical18_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical18_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical25_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical25_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical26_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical26_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical27_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical27_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Practical28_Marks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Practical28_Marks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Previous_Board_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.Previous_Board_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Previous_Board_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Previous_Notification" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Previous_Notification'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Previous_Passing_Year" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Previous_Passing_Year'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Previous_ROll_No" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ROll" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'ROll' in member name 'SanadDataClass.Previous_ROll_No' exists as a discrete term. If your usage is intended to be single word, case it as 'Roll' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Oll" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Oll' in member name 'SanadDataClass.Previous_ROll_No' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Previous_ROll_No'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Previous_SESSION" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SESSION" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SESSION' in member name 'SanadDataClass.Previous_SESSION' by changing it to 'Session'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Previous_SESSION'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Registration_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Registration_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Result_Notification" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Result_Notification'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Roll_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Roll_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SSC_Board_ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'SanadDataClass.SSC_Board_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message Id="SSC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SSC' in member name 'SanadDataClass.SSC_Board_ID' by changing it to 'Ssc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.SSC_Board_ID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SSC_Passing_Year" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SSC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SSC' in member name 'SanadDataClass.SSC_Passing_Year' by changing it to 'Ssc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.SSC_Passing_Year'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SSC_Roll_Number" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SSC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SSC' in member name 'SanadDataClass.SSC_Roll_Number' by changing it to 'Ssc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.SSC_Roll_Number'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SSC_Session" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SSC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SSC' in member name 'SanadDataClass.SSC_Session' by changing it to 'Ssc'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.SSC_Session'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Student_Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Student_Type'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject1_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject1_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject1_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject1_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject1_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject1_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject1_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject1_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject1_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject1_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject1_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject1_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject2_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject2_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject2_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject2_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject2_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject2_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject2_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject2_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject2_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject2_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject2_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject2_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject3_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject3_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject3_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject3_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject3_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject3_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject3_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject3_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject3_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject3_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject3_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject3_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject4_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject4_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject4_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject4_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject4_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject4_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject4_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject4_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject4_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject4_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject4_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject4_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject5_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject5_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject5_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject5_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject5_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject5_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject5_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject5_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject5_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject5_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject5_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject5_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject6_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject6_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject6_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject6_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject6_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject6_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject6_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject6_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject6_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject6_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject6_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject6_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject7_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject7_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject7_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject7_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject7_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject7_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject7_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject7_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject7_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject7_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject7_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject7_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject8_ABBR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ABBR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ABBR' in member name 'SanadDataClass.Subject8_ABBR' by changing it to 'Abbr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject8_ABBR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject8_Name" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject8_Name'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject8_ObtailedMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obtailed" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obtailed' in member name 'SanadDataClass.Subject8_ObtailedMarks' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject8_ObtailedMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject8_Status" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject8_Status'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Subject8_TotalMarks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Subject8_TotalMarks'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tehsil_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Tehsil" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tehsil' in member name 'SanadDataClass.Tehsil_Code' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Tehsil_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Time_Created" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Time_Created'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Time_Updated" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Time_Updated'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Updated_By" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Updated_By'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Zone_Code" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'SanadDataClass.Zone_Code'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StaticClass" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#byteArrayToImage(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="byte" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="StaticClass.cs" Line="44">Correct the casing of 'byte' in member name 'StaticClass.byteArrayToImage(byte[])' by changing it to 'Byte'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#connectionStr" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Str' in member name 'StaticClass.connectionStr' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.connectionStr' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#databasePassword" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.databasePassword' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dataSourceDestination" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.dataSourceDestination' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dataSourceSource" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.dataSourceSource' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#destinationDataBaseFileName" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DataBase" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'DataBase' in member name 'StaticClass.destinationDataBaseFileName' exists as a discrete term. If your usage is intended to be single word, case it as 'Database' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.destinationDataBaseFileName' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#destinationImageFolder" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.destinationImageFolder' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getImageFormat(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="get" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="StaticClass.cs" Line="55">Correct the casing of 'get' in member name 'StaticClass.getImageFormat(string)' by changing it to 'Get'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrayScale(System.Drawing.Bitmap)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GrayScale" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="StaticClass.cs" Line="73">The compound word 'GrayScale' in member name 'StaticClass.GrayScale(Bitmap)' exists as a discrete term. If your usage is intended to be single word, case it as 'Grayscale' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#imageActual" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.imageActual' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#imageExtension" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.imageExtension' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#imageSoruceLocation" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Soruce" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Soruce' in member name 'StaticClass.imageSoruceLocation' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.imageSoruceLocation' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#imageToByteArray(System.Drawing.Image)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="image" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="E:\GoogleDrive\Google Drive\Development\Dot Net\ImageFromToDatabase\ImageFromToDatabase" File="StaticClass.cs" Line="33">Correct the casing of 'image' in member name 'StaticClass.imageToByteArray(Image)' by changing it to 'Image'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#sourceDataBaseFileName" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DataBase" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'DataBase' in member name 'StaticClass.sourceDataBaseFileName' exists as a discrete term. If your usage is intended to be single word, case it as 'Database' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.sourceDataBaseFileName' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#sourceImageFolder" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.sourceImageFolder' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#tableName" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.tableName' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#updateQuery" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2014-01-03 04:21:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'StaticClass.updateQuery' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182127(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb264474(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182137(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182142(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberAbbreviation">Correct the casing of '{0}' in member name {1} by changing it to '{2}'. '{2}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182240(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb264492(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182245(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182156(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb385967(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+   <Name>Non-constant fields should not be visible</Name>
+   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
+   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182353(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="UsageRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Properties should not return arrays</Name>
+   <Description>Properties that return arrays are prone to code inefficiencies. Consider using a collection or making this a method. See the design guidelines for more information.</Description>
+   <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/0fss9skc(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182190(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182191(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
